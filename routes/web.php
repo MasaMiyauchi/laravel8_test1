@@ -22,3 +22,6 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+Route::get('company_search', [\App\Http\Controllers\CompanySearchController::class, 'form']);
+Route::post('company_search', [\App\Http\Controllers\CompanySearchController::class, 'search']);
