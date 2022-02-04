@@ -67,7 +67,9 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    //'timezone' => 'UTC',
+    'timezone' => 'Asia/Tokyo',
+    
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +82,8 @@ return [
     |
     */
 
-    'locale' => 'en',
+    //'locale' => 'en',
+    'locale' => 'ja',
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +96,8 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    //'fallback_locale' => 'en',
+    'fallback_locale' => 'ja',
 
     /*
     |--------------------------------------------------------------------------
@@ -106,7 +110,8 @@ return [
     |
     */
 
-    'faker_locale' => 'en_US',
+    //'faker_locale' => 'en_US',
+    'faker_locale' => 'ja_JP',
 
     /*
     |--------------------------------------------------------------------------
@@ -231,5 +236,25 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
+
+        /*
+    |--------------------------------------------------------------------------
+    | Self Add
+    |--------------------------------------------------------------------------
+    */
+
+        /*
+    |--------------------------------------------------------------------------
+    | Tax API Key
+    |--------------------------------------------------------------------------
+    | This value determines the "environment" your application is currently
+    | running in. This may determine how you prefer to configure various
+    | services the application utilizes. Set this in your ".env" file.
+    |
+    */
+
+    'TAX_AGENCY_APPLICATION_ID' => env('TAX_AGENCY_APPLICATION_ID'),
+    
+
 
 ];
