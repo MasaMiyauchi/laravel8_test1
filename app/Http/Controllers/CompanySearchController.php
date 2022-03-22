@@ -12,7 +12,6 @@ class CompanySearchController extends Controller
     public function form() {
 
         return view('company_search.form');
-
     }
 
     public function search(Request $request) {
@@ -50,7 +49,6 @@ class CompanySearchController extends Controller
             }
 
             $loop++;
-
         }
 
         return $data;

@@ -558,6 +558,9 @@
       <div class="m-3 border">
         <a href="{{url("TaxWebAPI")}}">TaxWebAPI</a>
       </div>
+      <div class="m-3 border">
+        <a href="{{url("company_search")}}">company_search</a>
+      </div>
     </div>
   </div>
 </body>
