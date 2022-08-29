@@ -30,3 +30,4 @@ Route::get('TaxWebAPI', [\App\Http\Controllers\TaxWebAPITestController::class, '
 Route::post('TaxWebAPI-get1', [\App\Http\Controllers\TaxWebAPITestController::class, 'get1'])->name('get1');
 Route::post('TaxWebAPI-tgt_date_get', [\App\Http\Controllers\TaxWebAPITestController::class, 'tgt_date_get'])->name('tgt_date_get');
 Route::post('TaxWebAPI-compNo_comp_info', [\App\Http\Controllers\TaxWebAPITestController::class, 'compNo_comp_info'])->name('compNo_comp_info');
+Route::get('compNo_comp_info_export', [\App\Http\Controllers\TaxWebAPITestController::class, 'exportcsv'])->name('compNo_comp_info_export');

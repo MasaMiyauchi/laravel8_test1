@@ -31,13 +31,16 @@
 
 
     <div class="p-3 m-3">
-        指定日に設立された企業情報
+        指定された日にちより2週間の期間に設立された企業情報
         <form action="{{ route('tgt_date_get') }}" method="post">
             @csrf
             <input name="date" type="date" />
             <input type="submit">
         </form>
     </div>
+
+
+
 
 
     <div class="p-3 m-3">
@@ -60,6 +63,16 @@
             </small>
         </div>
     </div>
+
+    <div class="p-3 m-3">
+        企業番号の企業情報
+        <form action="{{ route('compNo_comp_info_export') }}" method="get">
+            @csrf
+            <button> export csv</button>
+        </form>
+    </div>
+
+
 
 </body>
 
