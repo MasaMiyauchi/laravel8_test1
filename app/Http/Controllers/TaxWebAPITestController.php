@@ -219,6 +219,14 @@ class TaxWebAPITestController extends Controller
                             || $mod_corp->prefectureCode == 27  //osaka
                             || $mod_corp->prefectureCode == 37  //kagawa
                             || $mod_corp->prefectureCode == 40  //fukuoka
+                            || $mod_corp->prefectureCode == 14  //kanagawa
+                            || $mod_corp->prefectureCode == 20  //nagano
+                            || $mod_corp->prefectureCode == 12  //Chiba
+                            || $mod_corp->prefectureCode == 33  //okayama
+                            || $mod_corp->prefectureCode == 43  //kumamoto
+                            || $mod_corp->prefectureCode == 11  //saitama
+                            || $mod_corp->prefectureCode == 21  //gifu                            
+                            || $mod_corp->prefectureCode == 01  //hokkaidou                            
                         )
                             $mod_corp->save();
                     }
@@ -339,7 +347,6 @@ class TaxWebAPITestController extends Controller
 
         $export_profiles = DB::table('company_public_infos')
             ->select('name', 'corporateNumber', 'prefectureName', 'cityName', 'streetNumber', 'assignmentDate')
-            ->where('assignmentDate', '>', '2021-01-01')
             ->get();
 
         $message =

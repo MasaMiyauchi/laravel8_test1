@@ -56,7 +56,7 @@ class getCorpInfoByDay extends Command
         $ctrl_TaxWebAPITest = new TaxWebAPITestController();
 
         for($i=0;$i<$PeriodDays;$i++){
-            sleep(8);
+            echo('TURN:'.$i+1 . "\n" );
 
             if($i){
                 $DT_tgt_date->modify('+1 day');
@@ -71,6 +71,7 @@ class getCorpInfoByDay extends Command
             echo('StartDay:' . $StartDay."\n");
             echo('EndDay  :' . $EndDay."\n");
         $res = $ctrl_TaxWebAPITest->tgt_date_get_IF($StartDay, $EndDay);
+        sleep(10);
     }
 
         return 0;
